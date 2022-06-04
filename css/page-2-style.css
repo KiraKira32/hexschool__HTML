@@ -434,9 +434,9 @@ body {
     color: #221E1F;
   }
   .hader__title_text h1 {
-    font-size: 48px;
+    font-size: 32px;
     font-weight: bold;
-    line-height: 70px;
+    line-height: 46px;
   }
   .hader__title_text p {
     padding-top: 16px;
