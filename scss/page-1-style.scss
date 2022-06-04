@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    font-family:  'Noto Sans TC', sans-serif;
+}
+.wrap{
+    max-width: 1366px;
+    margin: 0 auto; 
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg"),url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg");
+    background-repeat: no-repeat;
+    background-position: top right,-222px 589px;
+}
+.header{
+    display: flex;
+    padding: 24px 0px 0px 139px;
+    .header__logo{
+        margin-right: 741.94px;
+    }
+    .header__item{
+        width: 128px;
+        height: 40px;
+        background: #FF5D50;
+        text-align: center;
+        line-height:40px;
+        border-radius:20px;
+        color:#FFF;
+    }
+}
+.content{
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg");
+    background-repeat: no-repeat;
+    background-position: 1156px 1020px;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    padding: 54px 0px 0px 141px;
+    .banner__text1{
+        font-size: 18px;
+        font-weight: 400;
+        color: #56C4C5;
+    }
+    .banner__text2{
+        font-size: 48px;
+        font-weight: 700;
+        color: #221E1F;
+        margin: 8px 0px 16px 0px;
+        line-height: 74px;
+    }
+    .banner__text3{
+        font-size: 20px;
+        color: #221E1F;
+    }
+}    
+.banner__pic{
+    width: 532px;
+    height: 534px;
+    margin-left: 102px;
+    .banner__pic--size{
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+.sm--circle{
+    padding: 15px 0px 0px 1247px;
+    display: flex;
+    .circle__top{
+        display: flex;
+        justify-content: center;
+        width: 71px;
+        height:71px;
+        border-radius: 50%;
+        background: #56C4C5;
+        color: #FFF;
+        font-weight: bold;
+        align-items: center;
+    }
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 124px 0px 0px 0px;
+}
+.logo__app{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 48px 204px 0px 193px;
+    h2{
+        font-size: 24px;
+        font-weight: bold;
+        padding: 24px 0px 24px 0px;
+    }
+    p{
+        font-size: 16px;
+        color: #747474;
+        line-height: 1.5;
+    }
+}
+.card__item{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 139px 0px 139px;
+}
+.card__subtitle{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 16px 0px 48px 0px; 
+}
+.card img{
+    border-radius: 12px 12px 0px 0px;
+    vertical-align: middle;
+}
+.card__item__box{
+    width: 260px;
+    height: 128px;
+    background: #FFF;
+    text-align: center; 
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+    .card__item__name{
+        color: #56C4C5;
+        padding: 16px 0px 16px 0px;
+    }
+    p{
+        line-height: 24px;
+    }
+}
+.card__item__content{
+    display: flex;
+    .card__item__content--left{
+        width: 507px;
+        height: 588px;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 139px;
+    }
+}
+.card__item__rectangle{
+    widows: 230px;
+    background: #FFF;
+    padding-top: 32px;
+    padding-bottom: 56px;
+    border-radius: 12px 12px 12px 12px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    .card__item__circle{
+        display: flex;
+        justify-content: center;
+        width: 86px;
+        height: 86px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+        background: #FFF;
+        margin: 0px 112px 0px 32px;
+    }
+    .card__name__title{
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 24px;
+        margin-left: 32px;
+    }
+    p{
+        color: #221E1F;
+        line-height: 24px;
+        padding-top: 16px;
+        margin-left: 32px;
+    }
+}
+.card__item__content--right{
+    margin-left: 137px;
+    .card__item__content--title{
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 46px;
+        padding-top: 165px;
+    }
+    p{
+        padding-top: 16px;
+        line-height: 26px;
+    }
+    .ard__item__content--text{
+        margin-top: 24px;
+        width: 136px;
+        height: 49px;
+        background: #56C4C5;
+        font-size: 18px;
+        text-align: center;
+        line-height: 49px;
+        border-radius:27px;
+        color:#FFF;
+    }
+}
+.evaluation{
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg");
+    background-repeat: no-repeat;
+    background-position: 50px 20px;
+    .evaluation__title{
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: 100px;
+        padding-left: 619px;
+    }
+    .evaluation__display__flex{
+        display: flex;
+        padding-left: 139px;
+    }
+    .evaluation__card{
+        position: relative;
+        display: flex;
+    }
+}
+.evaluation__card__pic{
+    border-radius: 50%;
+    position: absolute;
+    top: 48px;
+    left: 32px;
+}
+.evaluation__card__box{
+    margin: 104px 16px 0px 0px;
+    width: 352px;
+    height: 248px;
+    border-radius: 12px 12px 12px 12px;
+    background: #FFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    .evaluation__card__box__text{
+        line-height: 24px;
+        padding: 46px 32px 0px 32px;
+    }
+    hr{
+        border:0; height:1px; background-color:#d4d4d4;
+        margin: 24px 32px 24px 32px;
+    }
+}
+.evaluation__card__box__text--company{
+    font-weight: bold;
+    padding-left: 32px;
+    line-height: 24px;
+}
+.evaluation__card__namestar{
+    display: flex;
+    .evaluation__card__name{
+        padding: 12px 83.98px 12px 32px;
+    }
+    img{
+        width: 16.78px;
+        margin-right: 8.22px;
+    }
+}
+.tail{
+    width: 70px;
+    padding:24px 0px 0px 648px;
+    .tail__item{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    .tail__element{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #DDDDDD;
+    }
+    .tail__element__vary{
+        width: 16px;
+        height: 10px;
+        border-radius: 50px;
+        background: #FFD153;
+    }
+}
+.footer{
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg");
+    background-repeat: no-repeat;
+    height: 503px;
+}
+.footer__title{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 260px 471px 0px 471px;
+}
+.footer__bottom{
+    width: 136px;
+    height: 49px;
+    background: #56C4C5;
+    font-size: 18px;
+    text-align: center;
+    line-height: 49px;
+    border-radius:27px;
+    color:#FFF;
+    margin: 48px 615px 100px 615px;
+}
+.footer__end{
+    text-align: center;
+    height: 56px;
+    line-height: 56px;
+    background: #F5F5F5;
+}
